@@ -9,7 +9,7 @@ const users = [];
 const logFilePath = 'chat.log';
 
 app.get('/', (req, res) => {
-   res.sendFile(__dirname + '/chat.html');
+   res.sendFile(__dirname + '/index.html');
 });
 
 server.listen(PORT, () => {
