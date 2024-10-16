@@ -442,6 +442,7 @@ io.on('connection', (socket) => {
 
    socket.on('refresh users', () => {
        io.emit('send message', { message: `Текущие пользователи: ${users.join(', ')}`, user: "Система" });
+const socket = io('https://c70eb4f0-6503-4952-8944-0ba43a0769db-00-269akp4iwjx8b.kirk.replit.dev/');
 
        // Логирование текущего количества пользователей
        const details = `Active Users: ${users.length}\nUser List: ${users.join(', ')}`;
